@@ -1,0 +1,232 @@
+
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* ---------------------
+    header-style
+---------------------- */
+
+.header-1 button:hover{
+    background-color: white;
+    color: red;
+    cursor:pointer;
+}
+.header-1 button:hover .fa-angle-right {
+    background-color: white;
+    color: red;
+    cursor:pointer; 
+}
+.header-title{
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    background-color: rgb(12, 12, 12);  
+    margin:0 auto;
+    border-radius: 30px;
+}
+.header-1{
+    width: 50%;
+    height: 100%;
+    margin-top: 120px;
+    margin-left: 100px;
+    animation: header-1-move 1s ease-in;
+}
+.header-1 h1{
+    font-weight: 700;
+    font-size: 70px;
+    color:white;
+    margin-right: 100px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.header-1 p{
+    color:white;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+.header-1 button{
+    width: 180px;
+    height: 50px; 
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+
+}
+.fa-angle-right{
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.header-2{
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+ .header-2 img{
+    width: 100%;
+    animation: header-img-move 1s ease-in;
+} 
+
+/* -----------------------
+    animation-area
+----------------------- */
+@keyframes header-img-move{
+    0%{transform: translate(700px);}
+
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes header-1-move{
+    0%{transform: translate(-700px);}
+
+    100%{
+        transform: translate(0);
+    }
+}
+/* ----------------------------
+        main style
+---------------------------- */
+.blog a:hover{
+    background-color: red;
+    color: white;
+}
+
+main{
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    margin:70px auto;
+  
+}
+aside{
+    width: 270px;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+aside a{
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin:10px 20px;
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(82, 80, 80);
+}
+#special{
+    background-color: red;
+    color: white;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+}
+
+.blog{
+    width: 300px;
+    height: 380px;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 10px;
+}
+.blog img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.blog a{
+    display: inline-block;
+    font-weight: 400;
+    width: 120px;
+    height: 30px;
+    padding-top: 5px;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(214, 213, 213);
+    border-radius: 5px;
+    text-align: center;
+    color:rgb(82, 80, 80);
+}
+.blog h4{
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+.blog-info{
+    display: flex;
+    margin:auto 25px;
+}
+.blog-info p{
+    margin-right: 30px;
+}
+.fa-clock{
+    margin-right: 10px;
+}
+.fa-message{
+    margin-right: 10px;
+}
+/* --------------------
+    footer-style
+---------------------- */
+.footer-link a:hover{
+    color: rgb(243, 42, 42);
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h2{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    margin-top: 50px;
+}
+footer hr{
+    width: 90%;
+    color: #555353;
+    border: 0.1px solid rgba(250, 249, 249, 0.2);
+    margin: 50px auto;
+}
+.footer-link a{
+    font-weight: 700;
+    text-decoration: none;
+    margin: auto 20px;
+    color: rgb(201, 198, 198);
+}
+.social{
+    margin: 40px auto;
+}
+.social a{
+    margin: auto 20px;
+    color: rgb(201, 198, 198);
+}
+.socila-icon{
+    font-size: 20px;
+}
